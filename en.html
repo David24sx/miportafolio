@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - David VFX</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="animated-gradient-layer"></div>
+  <div id="particles-background"></div>
+  
+  <div class="circle-anim-wrapper">
+    <ul class="circles">
+      <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+  </div>
+
+  <header class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="nav-left">Creativity</div>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#about">About Me</a>
+        <a href="#tools">Tools</a>
+        <a href="#trabajo">My Work</a>
+        <a href="#reels">Reels</a>
+        <a href="#contact">Contact</a>
+        <a href="index.html" class="lang-switch" title="Cambiar a Español">🇪🇸 ES</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero" aria-labelledby="hero-title">
+      <div class="gif-box"></div>
+      <div class="hero-box">
+        <h1 id="hero-title" class="hero-title">DAVID VFX</h1>
+      </div>
+      <p class="about-text">
+        Gameplay Video Editor, focused on achieving excellent audience retention.
+      </p>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="tools" class="tools-section" aria-label="Tools">
+      <div class="tools-container">
+        <div class="tool">
+          <img class="tool-icon" src="assets/icons/premiere.png" alt="Premiere Pro">
+          <div class="tool-name">Premiere Pro</div>
+        </div>
+        <div class="tool">
+          <img class="tool-icon" src="assets/icons/after-effects.png" alt="After Effects">
+          <div class="tool-name">After Effects</div>
+        </div>
+        <div class="tool">
+          <img class="tool-icon" src="assets/icons/audacity.png" alt="Audacity">
+          <div class="tool-name">Audacity</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="trabajo" class="full-black" aria-labelledby="trabajo-title">
+      <div class="trabajo-inner">
+        <div class="section-title-box">
+          <div class="hero-box">
+            <h2 id="trabajo-title">My Work</h2>
+          </div>
+        </div>
+        <div class="title-separator" aria-hidden="true"></div>
+
+        <article class="video-item" id="video-counter-section">
+          <div class="views-badge">
+            <span class="fire-icon">🔥</span> 
+            OVER <span id="counter-number">0</span>K VIEWS
+          </div>
+          <video class="video-media" autoplay muted loop playsinline controls preload="metadata">

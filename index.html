@@ -4,23 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portafolio - David VFX</title>
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-
-  <!-- CSS externo -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Particles background -->
+  <div id="animated-gradient-layer"></div>
   <div id="particles-background"></div>
+  
+  <div class="circle-anim-wrapper">
+    <ul class="circles">
+      <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+  </div>
 
-  <!-- NAVBAR -->
   <header class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <div class="nav-left">Creatividad</div>
@@ -30,28 +29,24 @@
         <a href="#trabajo">Mi trabajo</a>
         <a href="#reels">Reels</a>
         <a href="#contact">Contacto</a>
+        <a href="en.html" class="lang-switch" title="Switch to English">🇺🇸 EN</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO / ABOUT -->
   <main>
     <section id="about" class="hero" aria-labelledby="hero-title">
-      <div class="gif-box">
-      </div>
+      <div class="gif-box"></div>
       <div class="hero-box">
         <h1 id="hero-title" class="hero-title">DAVID VFX</h1>
       </div>
       <p class="about-text">
-        Soy un editor de video apasionado por transformar ideas en experiencias visuales.
-        Me destaco por integrar <strong>Premiere Pro</strong> y <strong>After Effects</strong> en cada proyecto,
-        combinando creatividad y técnica para darle un toque profesional y único a tu contenido.
+        Editor especializado en Gameplays, logrando una retención de audiencia excelente.
       </p>
     </section>
 
     <div class="separator"></div>
 
-    <!-- TOOLS -->
     <section id="tools" class="tools-section" aria-label="Herramientas">
       <div class="tools-container">
         <div class="tool">
@@ -71,9 +66,6 @@
 
     <div class="separator"></div>
 
-    <!-- =========================
-        MI TRABAJO
-        ========================= -->
     <section id="trabajo" class="full-black" aria-labelledby="trabajo-title">
       <div class="trabajo-inner">
         <div class="section-title-box">
@@ -83,19 +75,24 @@
         </div>
         <div class="title-separator" aria-hidden="true"></div>
 
-        <!-- VIDEO ITEM 1 -->
-        <article class="video-item">
+        <article class="video-item" id="video-counter-section">
+          <div class="views-badge">
+            <span class="fire-icon">🔥</span> 
+            MÁS DE <span id="counter-number">0</span>MIL VISTAS
+          </div>
           <video class="video-media" autoplay muted loop playsinline controls preload="metadata">
             <source src="assets/videos/gameplay1.mp4" type="video/mp4">
             Tu navegador no soporta este video.
           </video>
           <div class="video-info">
-            <h3>Animaciones</h3>
-            <p>Un vistazo a mi edición de este gameplay con cortes dinámicos y efectos.</p>
+            <h3>Videos Recientes</h3>
+            <p>
+              Un vistazo a uno de mis últimos trabajos que ha logrado excelentes resultados
+              <a href="https://www.youtube.com/watch?v=TZ9EAyi-E3A" target="_blank" class="check-it-link">¡Compruébalo!</a>
+            </p>
           </div>
         </article>
 
-        <!-- VIDEO ITEM 2 -->
         <article class="video-item reverse">
           <video class="video-media" autoplay muted loop playsinline controls preload="metadata">
             <source src="assets/videos/gameplay2.mp4" type="video/mp4">
@@ -107,15 +104,14 @@
           </div>
         </article>
 
-        <!-- VIDEO ITEM 3 -->
         <article class="video-item">
           <video class="video-media" autoplay muted loop playsinline controls preload="metadata">
             <source src="assets/videos/gameplay3.mp4" type="video/mp4">
             Tu navegador no soporta este video.
           </video>
           <div class="video-info">
-            <h3>Gameplay ROBLOX sencilla</h3>
-            <p>Gameplay chill, edición mas sencilla.</p>
+            <h3>ANIMACIONES DINÁMICAS</h3>
+            <p>Animaciones llamativas un estilo mas movido.</p>
           </div>
         </article>
       </div>
@@ -123,30 +119,26 @@
 
     <div class="separator-wide" style="height:12px; opacity:.06;"></div>
 
-    <!-- REELS -->
     <section id="reels" aria-labelledby="reels-title">
       <div class="hero-box">
-        <h2 id="reels-title">Reels de TikTok</h2>
+        <h2 id="reels-title">Shorts</h2>
       </div>
       <div class="title-separator" style="margin:14px auto 0;"></div>
 
-      <div class="reels-grid">
+      <div class="reels-grid-static">
         <div class="reel-card">
-          <iframe src="https://www.tiktok.com/embed/7550393171910380856"
-                  frameborder="0"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen></iframe>
+          <video class="reel-media" autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/videos/reel1.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="reel-card">
-          <iframe src="https://www.tiktok.com/embed/7473998906645351735"
-                  frameborder="0"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen></iframe>
+           <video class="reel-media" autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/videos/reel2.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="contact-section" aria-labelledby="contact-title">
       <div class="hero-box">
         <h2 id="contact-title">¿Listo para trabajar conmigo?</h2>
@@ -154,20 +146,15 @@
       <p>¡Contáctame y empecemos!</p>
 
       <div class="contact-grid">
-        <!-- Gmail -->
-        <div class="contact-card">
+        <div class="contact-card" data-copy="david24stq@gmail.com">
           <img src="assets/icons/gmail.png" alt="Gmail">
           <span>david24stq@gmail.com</span>
         </div>
-
-        <!-- Discord -->
-        <div class="contact-card">
+        <div class="contact-card" data-copy="txxx24">
           <img src="assets/icons/discord.png" alt="Discord">
           <span>txxx24</span>
         </div>
-
-        <!-- Whatsapp -->
-        <div class="contact-card">
+        <div class="contact-card" data-copy="+584247677278">
           <img src="assets/icons/whatsapp.png" alt="Whatsapp">
           <span>+58 424-7677278</span>
         </div>
@@ -175,26 +162,15 @@
     </section>
   </main>
 
-  <!-- Scripts -->
+  <div id="copy-popup" class="copy-popup"></div>
+
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
-  // Inicializar Particles.js
   particlesJS("particles-background", {
-    "particles": {
-      "number": { "value": 80 },
-      "size": { "value": 3 },
-      "move": { "speed": 1 },
-      "line_linked": { "enable": true, "opacity": 0.2 },
-      "color": { "value": "#ffffff" }
-    },
-    "interactivity": {
-      "events": {
-        "onhover": { "enable": true, "mode": "repulse" }
-      }
-    }
+    "particles": { "number": { "value": 80 }, "size": { "value": 3 }, "move": { "speed": 1 }, "line_linked": { "enable": true, "opacity": 0.2 }, "color": { "value": "#ffffff" } },
+    "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } }
   });
 
-  // Typewriter para el título
   const text = "DAVID VFX";
   let i = 0;
   function typeWriter() {
@@ -206,9 +182,12 @@
   }
   document.getElementById("hero-title").innerHTML = "";
   typeWriter();
-
-  // Fade-in para descripción
   document.querySelector(".about-text").classList.add("fade-in");
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang.startsWith('en') && !sessionStorage.getItem('langRedirected')) {
+      sessionStorage.setItem('langRedirected', 'true');
+  }
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
